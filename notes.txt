@@ -1,0 +1,14 @@
+// 200: Stands for OK.
+// 201: Stands for CREATED.
+// 404: Stands for we couldn't find the obj
+
+// put: We expect that the application receives the entire new updated object
+// patch: We only expect the properties that should actually be updated on the object
+
+
+
+// [express.json] is a middleware
+// Is a function that can modify the incoming request data
+// It call middleware because it stands between the middle of the request and the response
+// It is just a step that the request goes through while being processed.
+// the step the requests fo through in this example: is that the data from the body is added to it.
