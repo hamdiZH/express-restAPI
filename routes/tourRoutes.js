@@ -10,6 +10,9 @@ const router = express.Router();
 // If not send back 400 (bad request)
 // Add it ro the post handler stack
 
+// Making the API Better_Aliasing
+router.route('/top-5-cheap').get(tourController.aliasTopTours, tourController.getAllTours)
+
 router
   .route('/')
   .get(tourController.getAllTours)
