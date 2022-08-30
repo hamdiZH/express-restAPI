@@ -11,7 +11,9 @@ const router = express.Router();
 // Add it ro the post handler stack
 
 // Making the API Better_Aliasing
-router.route('/top-5-cheap').get(tourController.aliasTopTours, tourController.getAllTours)
+router
+    .route('/top-5-cheap')
+    .get(tourController.aliasTopTours, tourController.getAllTours)
 
 router
   .route('/')
